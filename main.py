@@ -14,5 +14,4 @@ print(f"Verity conectado como {bot.user}")
 async def ping(ctx):
 await ctx.send("¡Estoy online! 🏓")
 
-Aqui va tu token de Render
 bot.run(os.getenv("TOKEN"))
