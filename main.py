@@ -8,10 +8,10 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-print(f"Verity conectado como {bot.user}")
+    print(f"Verity conectado como {bot.user}")
 
 @bot.command()
 async def ping(ctx):
-await ctx.send("¡Estoy online! 🏓")
+    await ctx.send("¡Estoy online! 🏓")
 
-bot.run(os.getenv("TOKEN"))
+bot.run(os.getenv("DISCORD_TOKEN"))
